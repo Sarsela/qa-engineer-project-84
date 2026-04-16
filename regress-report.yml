@@ -1,0 +1,46 @@
+---
+test-cases:
+  - summary: |
+      Проверка поиска товара по ключевому слову
+    status: pass
+
+  - summary: |
+      Проверка фильтрации товаров по цене
+    status: pass
+
+  - summary: |
+      Проверка добавления товара в корзину
+    status: pass
+
+  - summary: |
+       Проверка удаления товара из корзины
+    status: pass
+
+  - summary: |
+      Проверка оформления заказа с пустой корзиной
+    status: pass
+
+bugreports:
+  - summary: |
+      Отсутствует текст у чекбокса
+    environment: |
+      Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
+    steps-to-reproduce: |
+    1. Зайти на страницу логина https://runit.hexlet.ru/login
+    2. Перейти в производители
+    expected-result: |
+      Отображается текст на чекбоксе
+    actual-result: |
+     Отсуствует текст на чекбоксе
+     
+ - summary: |
+      Пустой элемент в выпадающем списке
+    environment: |
+      Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
+    steps-to-reproduce: |
+    1. Зайти на страницу логина https://runit.hexlet.ru/login
+    2. Перейти категорию товаров
+    expected-result: |
+    Отображается выпадающий список
+    actual-result: |
+    Отображается пустой элемент в выпадающем списке
