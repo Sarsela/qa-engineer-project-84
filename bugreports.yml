@@ -1,0 +1,26 @@
+---
+- summary: |
+    Не работает перевод с англицйского
+  environment: |
+    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
+  steps-to-reproduce: |
+    1. Зайти на страницу логина https://runit.hexlet.ru/login
+    2. Нажать на Language
+    3. Нажать на Russian или Spanish
+  expected-result: |
+    Описание товаров будет на русском или испанском
+  actual-result: |
+    Описание остается на английском языке
+
+- summary: |
+    Многострочный текст в кнопке
+  environment: |
+    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
+  steps-to-reproduce: |
+    1. Зайти на страницу логина https://runit.hexlet.ru/login
+    2. Нажать на Language
+    3. Нажать на Spanish
+  expected-result: |
+    Текст в кнопке переведется и будет в одну строку
+  actual-result: |
+    Текст кнопки переносится на следующую строку, из-за чего кнопка увеличивается по высоте
